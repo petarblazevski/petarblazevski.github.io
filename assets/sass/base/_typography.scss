@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
 /**
  * Basic typography style for copy text
  */
@@ -6,7 +10,8 @@ body {
   font: normal 125% / 1.4 $text-font-stack;
 }
 
-h1 {
+h1,
+h2 {
 	margin: 0;
 	padding: 0;
 }

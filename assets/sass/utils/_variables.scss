@@ -1,9 +1,6 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
-
-
-
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
 
 
 /// Regular font family
@@ -26,7 +23,7 @@ $text-color: #222 !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #E50050 !default;
+$brand-color: #83CC61 !default;
 
 /// Light grey
 /// @type Color
@@ -41,10 +38,14 @@ $mid-grey: #999 !default;
 $dark-grey: #444 !default;
 
 
-// Welcome Colors
+// Welcome colors
 $welcome-bg-color: #383838;
 $welcome-text-color: #fff;
 
+// Education colors
+$education-bg-color: #ffc21a;
+$education-text-color: #fff;
+$education-icon: #FF4A4A;
 
 /// Container's maximum width
 /// Below that is 100%

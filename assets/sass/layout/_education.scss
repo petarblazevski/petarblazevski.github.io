@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #EDUCATION
+\*------------------------------------*/
+
+.education {
+	position: relative;
+	background-color: $education-bg-color;
+
+	.fa {
+		color: #FF4A4A;
+	}
+}
+
+.education-content {
+	@include center-content();
+
+	color: $education-text-color;
+}
+
+.education-school {
+	font-weight: bold;
+}
+
+.education-description {
+	@include font-size(18px);
+}
+
+.education-courses {
+	padding-left: 25px;
+	@include font-size(14px);
+}
+
+.graduation-cap {
+	@include font-size(80px);
+}
+
+.old-school {
+	width: 250px;
+	height: 250px;
+
+	fill: $education-icon;
+}

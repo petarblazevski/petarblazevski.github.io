@@ -1,8 +1,27 @@
+/*------------------------------------*    #VARIABLES
+\*------------------------------------*/
+/*------------------------------------*    #FUNCTIONS
+\*------------------------------------*/
+/*------------------------------------*    #MIXINS
+\*------------------------------------*/
+/**
+ * Center the content in middle
+ */
+/**
+ * Include font size in REM
+ * 
+ * @param  Number $font-size
+ * @param  String $line-height: auto
+ * @return String
+ */
+/*------------------------------------*    #BASE
+\*------------------------------------*/
 /**
  * Set up a decent box model on the root element
  */
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 /**
@@ -19,7 +38,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: #E50050;
+  color: #83CC61;
   text-decoration: none;
 }
 
@@ -31,6 +50,27 @@ a:focus {
 }
 
 /**
+  * Default styling for container
+  */
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/**
+  * Basic Stylings
+  */
+p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+
+/*------------------------------------*    #FONTS
+\*------------------------------------*/
+/*------------------------------------*    #TYPOGRAPHY
+\*------------------------------------*/
+/**
  * Basic typography style for copy text
  */
 body {
@@ -38,11 +78,14 @@ body {
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
   padding: 0;
 }
 
+/*------------------------------------*    #HELPERS
+\*------------------------------------*/
 /**
  * Clear inner floats
  */
@@ -50,27 +93,6 @@ h1 {
   clear: both;
   content: '';
   display: table;
-}
-
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 1200px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */
 }
 
 /**
@@ -102,12 +124,114 @@ h1 {
   width: 1px;
 }
 
+/**
+ * Margin Helpers
+ */
+.marg-top-small {
+  margin-top: 15px;
+}
+
+.marg-top-medium {
+  margin-top: 25px;
+}
+
+.marg-top-large {
+  margin-top: 35px;
+}
+
+/*------------------------------------*    #WELCOME
+\*------------------------------------*/
 .welcome {
-  height: 100vh;
-  max-height: 100%;
-  max-width: 100%;
   color: #fff;
   background-color: #383838;
 }
+
+.brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.brand-image {
+  width: 150px;
+  height: 150px;
+  border: 8px solid #83CC61;
+  border-radius: 50%;
+}
+
+.brand-title {
+  margin: 15px 0;
+}
+
+/*------------------------------------*    #EDUCATION
+\*------------------------------------*/
+.education {
+  position: relative;
+  background-color: #ffc21a;
+}
+
+.education .fa {
+  color: #FF4A4A;
+}
+
+.education-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+}
+
+.education-school {
+  font-weight: bold;
+}
+
+.education-description {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+
+.education-courses {
+  padding-left: 25px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+}
+
+.graduation-cap {
+  font-size: 80px;
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+.old-school {
+  width: 250px;
+  height: 250px;
+  fill: #FF4A4A;
+}
+
+/*------------------------------------*    #HEADER
+\*------------------------------------*/
+/*------------------------------------*    #FOOTER
+\*------------------------------------*/
+/*------------------------------------*    #BUTTONS
+\*------------------------------------*/
+/*------------------------------------*    #SECTIONS
+\*------------------------------------*/
+.section {
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*------------------------------------*    #HOME
+\*------------------------------------*/
 
 /*# sourceMappingURL=main.css.map */

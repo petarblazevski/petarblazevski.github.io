@@ -1,12 +1,13 @@
-// -----------------------------------------------------------------------------
-// This file contains very basic styles.
-// -----------------------------------------------------------------------------
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
 
 /**
  * Set up a decent box model on the root element
  */
  html {
  	box-sizing: border-box;
+ 	font-size: $base-font-size;
  }
 
 /**
@@ -30,4 +31,21 @@
  		color: $text-color;
  		text-decoration: underline;
  	}
+ }
+
+ /**
+  * Default styling for container
+  */
+ 
+ .container {
+ 	padding-top: 60px;
+ 	padding-bottom: 60px;
+ }
+
+ /**
+  * Basic Stylings
+  */
+ 
+ p {
+ 	@include font-size(18px);
  }
