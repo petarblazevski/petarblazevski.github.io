@@ -2,12 +2,17 @@
     #BASE
 \*------------------------------------*/
 
+html, body {
+	height: 100%;
+}
+
 /**
  * Set up a decent box model on the root element
  */
  html {
  	box-sizing: border-box;
  	font-size: $base-font-size;
+ 	background-color: #fff;
  }
 
 /**

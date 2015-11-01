@@ -3,17 +3,17 @@
 \*------------------------------------*/
 
 .welcome {
+	display: flex;
+	justify-content: center;
+	// align-content: center;
+	align-items: center;
+	height: 100vh;
 	color: $welcome-text-color;
 	background-color: $welcome-bg-color;
 }
 
 .brand {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 	text-align: center;
-	
 }
 
 .brand-image {
