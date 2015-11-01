@@ -1,3 +1,4 @@
+var postcss = require('gulp-postcss');
 var gulp = require('gulp');
 var config = require('./assets/config');
 var util = require('gulp-util');
@@ -6,6 +7,7 @@ var notify = require('gulp-notify');
 var sourcemaps = require('gulp-sourcemaps')
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
+var nano = require('gulp-cssnano');
 
 gulp.task('sass', function () {
   	gulp.src(config.css.sass.folder + '/**/*.scss')
@@ -26,6 +28,7 @@ gulp.task('sass', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(nano())
 	    .pipe(sourcemaps.write('.'))
 	    .pipe(gulp.dest(config.css.outputFolder))
 	    .pipe(notify({
